@@ -1,0 +1,115 @@
+
+$primary-color: #1C448F;
+$secondary-color: #67ADF5;
+$accent-color: #054DBC;
+$error-color: red;
+$body-bg: url('./assets/images/background2.png');
+$section-bg: url('./assets/images/background.png');
+$image-bg: url('./assets/images/web.jpg');
+
+
+.align-items-start {
+  background-image: $section-bg;
+  display: flex;
+  color: white;
+}
+
+
+.navbar,
+.list-group-item,
+.card-header {
+  background-color: $primary-color;
+  color: white;
+}
+
+.blue {
+  color: $secondary-color;
+}
+
+#body {
+  background-image: $body-bg;
+}
+
+.list-group-item {
+  &:active {
+    color: #d1e8ff;
+    opacity: 0.8;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  
+}
+
+.blue-text {
+  color: $accent-color;
+
+  th {
+    color: $accent-color;
+  }
+}
+
+#footer {
+  background-color: black;
+  color: white;
+}
+
+#image {
+  background-image: $image-bg;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 150px;
+}
+
+#left {
+  background-color: $primary-color;
+  width: 20rem;
+  border: none;
+}
+
+#map {
+  height: 280px;
+  width: 100%;
+}
+
+.fixed-label {
+  width: 200px;
+  white-space: nowrap;
+}
+
+.error {
+  color: $error-color;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.input-error {
+  border: 2px solid $error-color;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 5px $error-color;
+  }
+}
+h6{
+  color: white;
+}
+.dev-row:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn-outline-light.text-white {
+  &:hover {
+    color: $primary-color !important;        // changes text to Bootstrap's primary
+   
+  }
+}
+#not-found{
+  background-color: #efeee8;
+}
+.red-text
+{
+  color:red;
+}
